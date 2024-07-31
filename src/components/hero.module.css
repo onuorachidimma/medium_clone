@@ -1,0 +1,20 @@
+.discount {
+  background: linear-gradient(270deg, #ffc017 14%, #ffe330 32%, #fbf0b8 51%);
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.discount > p {
+  font-weight: 500;
+}
+
+.discount > a {
+  display: block;
+  align-items: center;
+  display: flex;
+  color: black;
+  text-decoration-color: black;
+}
