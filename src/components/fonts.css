@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "gt-super";
+  src: url("../assets/fonts/GT-Super-Display-Medium-Trial.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "sohne";
+  src: url("../assets/fonts/TestSohneBreit-Kraftig-BF663d89caa6b6c.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
