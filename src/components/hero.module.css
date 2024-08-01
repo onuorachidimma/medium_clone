@@ -1,3 +1,9 @@
+@import "../components/fonts.css";
+
+.hero {
+  border-bottom: 1px solid black;
+  height: 81vh;
+}
 .discount {
   background: linear-gradient(270deg, #ffc017 14%, #ffe330 32%, #fbf0b8 51%);
   display: flex;
@@ -5,6 +11,8 @@
   gap: 8px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+  position: relative;
+  z-index: 1;
 }
 
 .discount > p {
@@ -17,4 +25,51 @@
   display: flex;
   color: black;
   text-decoration-color: black;
+}
+
+.heroBody {
+  position: relative;
+}
+
+.backgroundImage {
+  color: #242424;
+  background-image: url(../assets/images/heroImage.webp);
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -10px;
+  right: 0;
+  width: 100%;
+  height: 76vh;
+  z-index: -1;
+}
+
+.heroIntroText {
+  font-family: "gt-super";
+  font-size: 118px;
+  font-weight: normal;
+  padding-left: 13%;
+  line-height: 6rem;
+}
+
+.subTexts {
+  padding-left: 13%;
+}
+.subTexts > p {
+  font-size: 22px;
+  font-family: "sohne";
+}
+
+.getStarted {
+  color: white;
+  background-color: black;
+  padding: 12px 35px;
+  border-radius: 99em;
+  text-decoration: none;
+  font-family: "sohne";
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-top: 2rem;
+  display: inline-block;
 }
