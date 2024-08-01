@@ -10,7 +10,6 @@ const Navbar = () => {
           height="26"
           fill="none"
           viewBox="0 0 120 26"
-          class="ce cf"
         >
           <path
             fill="#000"
