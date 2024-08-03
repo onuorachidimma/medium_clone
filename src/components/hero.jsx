@@ -20,6 +20,9 @@ const Hero = () => {
             </a>
           </div>
         </div>
+        <div className={styles.heroImageContainer}>
+          <img src={heroImage} alt="medium Image" />
+        </div>
       </div>
     </div>
   );

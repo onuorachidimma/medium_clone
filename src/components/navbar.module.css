@@ -3,28 +3,72 @@
   justify-content: space-between;
   width: 75%;
   margin: auto;
-  padding: 22px;
+  height: 10vh;
+  align-items: center;
 }
 
-.navOptionsConatiner{
+.navOptionsConatiner {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  font-family: sans-serif;
+  align-items: center;
+}
+
+.navOptionsConatiner a {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  display: block;
+}
+
+.navOptionsConatiner > .blackBgOption {
+  background-color: black;
+  padding: 9px 17px;
+  color: rgba(255, 255, 255, 1);
+  border-radius: 99em;
+}
+
+/* ########## Responsive Styling ############## */
+@media screen and (max-width: 1349px) {
+  .navbarContainer {
+    width: 83%;
+  }
+
+  .navOptionsConatiner {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1078px) {
+  .navbarContainer {
+    width: 83%;
+  }
+
+  .navOptionsConatiner {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 727px) {
+  .navOptionsConatiner > .hidden {
+    display: none;
+  }
+
+  .navOptionsConatiner {
     width: 35%;
-    display: flex;
-    justify-content: space-between;
-    font-family: sans-serif;
-    align-items: center;
-    
+  }
+
+  .navbarContainer {
+    width: 92%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .navOptionsConatiner .hidden1 {
+    display: none;
+  }
 }
 
-.navOptionsConatiner a{
-    font-size: 14px;
-    color: rgba(0, 0, 0, 0.8);
-    text-decoration: none;
-    display: block;
-}
-
-.navOptionsConatiner > .blackBgOption{
-    background-color: black;
-    padding: 9px 17px;
-    color: rgba(255, 255, 255, 1);
-    border-radius: 99em;
+@media screen and (max-width: 345px) {
+  .navOptionsConatiner > .blackBgOption {
+    font-size: 8px;
+  }
 }

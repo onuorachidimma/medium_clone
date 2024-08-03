@@ -2,7 +2,7 @@
 
 .hero {
   border-bottom: 1px solid black;
-  height: 81vh;
+  height: 80vh;
 }
 .discount {
   background: linear-gradient(270deg, #ffc017 14%, #ffe330 32%, #fbf0b8 51%);
@@ -11,54 +11,50 @@
   gap: 8px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  position: relative;
   z-index: 1;
+  font-size: 14px;
+  font-family: "sohneB";
 }
 
 .discount > p {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .discount > a {
   display: block;
   align-items: center;
   display: flex;
-  color: black;
+  color: #242424;
   text-decoration-color: black;
+  font-weight: normal;
 }
 
 .heroBody {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 
 .backgroundImage {
-  color: #242424;
-  background-image: url(../assets/images/heroImage.webp);
-  background-size: contain;
-  background-position: right;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: -10px;
-  right: 0;
-  width: 100%;
-  height: 76vh;
-  z-index: -1;
+  width: 60%;
 }
 
 .heroIntroText {
   font-family: "gt-super";
   font-size: 118px;
   font-weight: normal;
-  padding-left: 13%;
+  padding-left: 20%;
   line-height: 6rem;
+  color: #242424;
+  letter-spacing: -5px;
 }
 
 .subTexts {
-  padding-left: 13%;
+  padding-left: 20%;
 }
 .subTexts > p {
   font-size: 22px;
   font-family: "sohne";
+  color: #242424;
 }
 
 .getStarted {
@@ -72,4 +68,106 @@
   letter-spacing: 1px;
   margin-top: 2rem;
   display: inline-block;
+}
+
+.heroImageContainer {
+  width: 28.2%;
+}
+.heroImageContainer img {
+  margin-top: px;
+  object-fit: cover;
+  width: 100%;
+  height: 565px;
+  display: block;
+}
+
+/* ########## Responsive Styling ############## */
+@media screen and (max-width: 1349px) {
+  .heroIntroText,
+  .subTexts {
+    padding-left: 10%;
+  }
+
+  .heroImageContainer {
+    margin-top: -10px;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  .backgroundImage {
+    width: 85%;
+  }
+  .heroImageContainer {
+    width: 33%;
+  }
+}
+@media screen and (max-width: 1078px) {
+  .heroImageContainer {
+    display: none;
+  }
+  .getStarted {
+    background-color: #1a8917;
+  }
+  .backgroundImage {
+    width: 100%;
+  }
+  .heroIntroText {
+    font-size: 100px;
+  }
+  .heroIntroText,
+  .subTexts {
+    padding-left: 7%;
+  }
+
+  .subTexts > p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 727px) {
+  .heroIntroText {
+    font-size: 80px;
+    line-height: 4.5rem;
+    letter-spacing: -2px;
+    margin-top: 8rem;
+  }
+  .heroIntroText,
+  .subTexts {
+    padding-left: 4%;
+  }
+  .discount {
+    justify-content: left;
+    padding-left: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .discount {
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 1.5rem;
+  }
+  .discount > a,
+  .discount > p {
+    width: 100%;
+  }
+
+  .discount > p {
+    margin: 0;
+  }
+
+  .heroIntroText {
+    font-size: 70px;
+    line-height: 4.5rem;
+    letter-spacing: -2px;
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .heroIntroText {
+    font-size: 60px;
+    line-height: 3rem;
+  }
 }

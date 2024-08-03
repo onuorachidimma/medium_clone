@@ -1,17 +1,66 @@
-
-.footerContainer > a{
-    display: block;
-    text-decoration: none;
-    color: #6B6B6B;
-    margin-top: 1.5rem;
-    font-size: 13px;
-    font-family: 'sohneB';
+.landingPage {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.footerContainer{
+.footerContainer > a {
+  display: block;
+  text-decoration: none;
+  color: #6b6b6b;
+  margin-top: 1.5rem;
+  font-size: 13px;
+  font-family: "sohneB";
+}
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+  margin: auto;
+  text-align: center;
+  height: 10vh;
+}
+
+.footerContainerHidden {
+  display: none;
+}
+/* ########## Responsive Styling ############## */
+@media screen and (max-width: 1349px) {
+  .footerContainer {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .footerContainer {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 1078px) {
+  .footerContainer {
+    display: none;
+  }
+
+  .footerContainerHidden {
     display: flex;
-    justify-content: space-between;
-    width: 35%;
-    margin: auto;
-    text-align: center;
-    
+    gap: 12px;
+    margin-left: 4rem;
+  }
+  .footerContainerHidden > a {
+    text-decoration: none;
+    color: white;
+    padding-top: 1.3rem;
+    font-family: "sohne";
+    font-size: 12px;
+    font-weight: normal;
+  }
+  .footer {
+    background-color: black;
+    padding-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 727px) {
+  .footerContainerHidden {
+    margin-left: 1.5rem;
+  }
 }

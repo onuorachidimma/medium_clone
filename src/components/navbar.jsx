@@ -22,11 +22,21 @@ const Navbar = () => {
         </svg>
       </div>
       <div className={styles.navOptionsConatiner}>
-        <a href="#">Our Story</a>
-        <a href="#">Membership</a>
-        <a href="#">Write</a>
-        <a href="#">Sign In</a>
-        <a className={styles.blackBgOption} href="#">Get Started</a>
+        <a className={styles.hidden} href="#">
+          Our Story
+        </a>
+        <a className={styles.hidden} href="#">
+          Membership
+        </a>
+        <a className={styles.hidden} href="#">
+          Write
+        </a>
+        <a className={styles.hidden1} href="#">
+          Sign In
+        </a>
+        <a className={styles.blackBgOption} href="#">
+          Get Started
+        </a>
       </div>
     </div>
   );
